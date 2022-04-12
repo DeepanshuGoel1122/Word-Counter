@@ -1,77 +1,116 @@
-* {  
-    padding: 0;  
-    margin: 0;  
-    box-sizing: border-box;  
-    font-family: sans-serif;  
-   }  
-   .ui-input-container {  
-    background-color: #fff;  
-    padding: 3rem;  
-    border-radius: 4px;  
-    width: 50%;  
-    margin: 0 auto;  
-   }  
-   .ui-input-container h2 {  
-    font-family: sans-serif;  
-    margin-bottom: 20px;  
-    font-weight: 700;  
-    text-transform: capitalize;  
-   }  
-   .ui-form-input-container {  
-    position: relative;  
-    font-size: 1rem;  
-    margin-bottom: 15px;  
-    display: block;  
-   }  
-   .ui-form-input {  
-    padding: 13px 15px;  
-    border-radius: 8px;  
-    border: 2px solid #1a73e8;  
-    outline: 0;  
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.ui-input-container {
+    box-sizing: border-box;
+    background-color: #fff;
+    padding: 2rem 0;
+    border-radius: 4px;
+    width: 50%;
+    margin: 0 auto;
+}
+
+.ui-input-container h2 {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+.ui-form-input-container {
+    position: relative;
+    font-size: 1rem;
+    display: block;
+}
+
+.ui-form-input {
+    padding: 13px 15px;
+    border-radius: 8px;
+    border: 2px solid #1a73e8;
+    outline: 0;
     width: 100%;
-    font-size: 16px;  
-   }  
-   .form-input-label {  
-    position: absolute;  
-    top: -7px;  
-    left: 10px;  
-    color: #1a73e8;  
-    font-size: 0.85rem;  
-    padding-right: 0.33rem;  
-    padding-left: 0.33rem;  
-    background: #fff;  
-    transition: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);  
-    font-family: sans-serif;  
-    text-transform: capitalize;  
-   }  
-   .ui-form-btn {  
-    padding: 13px 15px;  
-    border-radius: 8px;  
-    background: #1a73e8;  
-    outline: 0;  
-    width: 100%;  
-    border: none;  
-    cursor: pointer;  
-    font-size: 1rem;  
-    color: white;  
-    font-weight: 500;  
-   }  
-   .error .ui-form-input,  
-   .error .form-input-label {  
-    border-color: #d50000;  
-    color: #d50000;  
-   }  
-   textarea {  
-    min-height: 10em;  
-    max-height: 50vh;  
-    width: 100%;  
-   } 
+    font-size: 16px;
+}
 
-   .ui-input-container p{
-       font-size: 20px;
-       margin-top: 30px;
+.form-input-label {
+    position: absolute;
+    top: -7px;
+    left: 10px;
+    color: #1a73e8;
+    font-size: 0.85rem;
+    padding-right: 0.33rem;
+    padding-left: 0.33rem;
+    background: #fff;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
 
-   }
-   p span{
-       margin-right: 0.5em;
-   }
+
+textarea {
+    min-height: 30vh;
+    max-height: 40vh;
+    max-width: 45vw;
+}
+
+
+p {
+    margin-top: 20px;
+}
+
+
+.output {
+    display: flex;
+    justify-content: center;
+    width: 40%;
+    height: 50vh;
+    margin: 0 auto;
+    font-size: 1.4em;
+    font-weight: 700;
+}
+
+.counts {
+
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 10%;
+    height: 100%;
+
+}
+
+.names {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 80%;
+}
+
+
+
+@media screen and (max-width: 450px) {
+    .output {
+        width: 55%;
+    }
+
+    .counts {
+        width: 30px;
+    }
+}
+
+
+@media (max-width: 300px) {
+
+    .output {
+        justify-content: flex-start;
+        width: 70%;
+        font-size: 1.3em;
+    }
+
+    .names {
+        width: 100%;
+    }
+}
