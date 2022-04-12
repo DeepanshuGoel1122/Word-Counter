@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,26 +9,39 @@
 	<title>Word Counter</title>
 
 </head>
+
 <body>
-	<div class="ui-input-container">  
-		<h2>Counter</h2>  
-		<label class="ui-form-input-container">  
-		 <textarea class="ui-form-input" id="word-count-input"></textarea>  
-		 <span class="form-input-label">Type Here</span>  
-		</label>  
+	<div class="ui-input-container">
+		<h2>Counter</h2>
+		<label class="ui-form-input-container">
+			<textarea class="ui-form-input" id="word-count-input"></textarea>
+			<span class="form-input-label">Type Here</span>
+		</label>
 
 
-		<p id="abcd"><strong><span id="word-count">0</span>&nbsp&nbsp&nbsp  words</strong></p>
-		<p><strong><span id="character-count">0</span>&nbsp&nbsp&nbsp  characters</strong></p>
-		<p><strong><span id="alphabets">0</span>&nbsp&nbsp&nbsp  Alphabets</strong></p>
-		<p><strong><span id="numbers">0</span>&nbsp&nbsp&nbsp  Numbers</strong></p>
-		<p><strong><span id="white-space">0</span>&nbsp&nbsp&nbsp  White Space</strong></p>
-		<p><strong><span id="special-character">0</span>&nbsp&nbsp&nbsp  Special Character</strong></p>  
+	</div>
 
-	   </div>
+	<div class="output">
+		<div class="counts">
+			<p id="word-count">0</p>
+			<p id="character-count">0</p>
+			<p id="alphabets">0</p>
+			<p id="numbers">0</p>
+			<p id="white-space">0</p>
+			<p id="special-character">0</p>
+		</div>
+		<div class="names">
+			<p>words</p>
+			<p>characters</p>
+			<p>Alphabets</p>
+			<p>Numbers</p>
+			<p>White Space</p>
+			<p>Special Character</p>
+		</div>
+	</div>
 
 
 	<script src="script.js"></script>
 </body>
-</html>
 
+</html>
