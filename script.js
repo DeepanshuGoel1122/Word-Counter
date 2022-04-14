@@ -25,7 +25,7 @@ function count(){
 
     let text = input.value;
 
-    // ------------------------Count Toral Words----------------------------------------------------------------
+    // ------------------------Count Total Words----------------------------------------------------------------
     var TotalWords = text.split(/[\n\r\s]+/g).filter(function (word) {  
         return word.length > 0;  
     });
