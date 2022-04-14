@@ -14,7 +14,7 @@
     margin: 0 auto;
 }
 
-.ui-input-container h2 {
+.ui-input-container h1 {
     font-family: sans-serif;
     margin-bottom: 20px;
     font-weight: 700;
@@ -52,8 +52,7 @@
 
 textarea {
     min-height: 30vh;
-    max-height: 40vh;
-    max-width: 45vw;
+    resize: none;
 }
 
 
@@ -68,7 +67,7 @@ p {
     width: 40%;
     height: 50vh;
     margin: 0 auto;
-    font-size: 1.4em;
+    font-size: 22px;
     font-weight: 700;
 }
 
@@ -76,8 +75,8 @@ p {
 
     display: flex;
     flex-direction: column;
-    float: left;
-    width: 10%;
+    align-items: center;
+    width: 20%;
     height: 100%;
 
 }
@@ -85,32 +84,46 @@ p {
 .names {
     display: flex;
     flex-direction: column;
+    float: left;
     height: 100%;
     width: 80%;
 }
 
 
 
-@media screen and (max-width: 450px) {
+@media screen and (max-width: 650px) {
+
+    .ui-input-container{
+        width: 80%;
+    }
+
     .output {
-        width: 55%;
+        width: 70%;
+        font-size: 20px;
     }
 
     .counts {
-        width: 30px;
+        width: 20%;
+        font-size: 20px;
     }
 }
 
 
-@media (max-width: 300px) {
+@media screen and (max-width: 310px) {
 
     .output {
-        justify-content: flex-start;
-        width: 70%;
-        font-size: 1.3em;
+        width: 90%;
+    }
+
+    .counts {
+        min-width: 20%;
+        width:fit-content;
+        font-size: 18px;
     }
 
     .names {
         width: 100%;
+        font-size: 18px;
     }
+
 }
